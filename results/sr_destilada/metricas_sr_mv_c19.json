@@ -1,0 +1,67 @@
+{
+  "metodo": "KAN_SR_MV_COMPLEXITY_19",
+  "complexidade": 19,
+  "equacao_normalizada": "((cube(fator_obsolescencia - flag_subdeclaracao) * padrao_ordinal) + (((valor_m2_construcao + area_terreno_m2) * 0.45851025) + sqrt(valor_m2_terreno * 1.969852))) + 7.6152616",
+  "features_usadas": [
+    "valor_m2_terreno",
+    "valor_m2_construcao",
+    "area_terreno_m2",
+    "fator_obsolescencia",
+    "flag_subdeclaracao",
+    "padrao_ordinal"
+  ],
+  "n_features": 6,
+  "metricas_vs_ytrue": {
+    "treino": {
+      "r2": 0.6569218068642255,
+      "rmse": 0.24179177222942427,
+      "mae": 0.17986117265445198,
+      "mape": 18.46336617165277,
+      "n": 10500
+    },
+    "val": {
+      "r2": 0.6194477492210633,
+      "rmse": 0.25926177652373866,
+      "mae": 0.18614384574331339,
+      "mape": 19.655766869312735,
+      "n": 2250
+    },
+    "teste": {
+      "r2": 0.6646277768963391,
+      "rmse": 0.23738421300615642,
+      "mae": 0.18098645138715064,
+      "mape": 18.300709236695184,
+      "n": 2250
+    }
+  },
+  "fidelidade_kan": {
+    "treino": {
+      "r2": 0.9042199884406479,
+      "rmse": 0.10807360176106197,
+      "mae": 0.08565335953790085,
+      "mape": 8.579744282538261,
+      "n": 10500
+    },
+    "val": {
+      "r2": 0.8926771090864656,
+      "rmse": 0.11336724229051591,
+      "mae": 0.08927282659673388,
+      "mape": 8.906270665260859,
+      "n": 2250
+    },
+    "teste": {
+      "r2": 0.8999624592116618,
+      "rmse": 0.10954878543215257,
+      "mae": 0.08661342193071823,
+      "mape": 8.679238479361276,
+      "n": 2250
+    }
+  },
+  "nbr14653_grau2_teste": {
+    "r2": 0.6646277768963391,
+    "mape": 18.300709236695184,
+    "ok_r2": true,
+    "ok_mape": true,
+    "atende": true
+  }
+}

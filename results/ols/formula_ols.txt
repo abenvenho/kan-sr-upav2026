@@ -1,0 +1,13 @@
+ln(V/m²) = +5.004376
+  +0.290931 × log(valor_m2_terreno)
+  +0.865363 × BoxCox(fator_obsolescencia, λ=1.873)
+  -0.274100 × flag_subdeclaracao
+  +0.000834 × BoxCox(valor_m2_construcao, λ=0.814)
+  +0.152574 × BoxCox(area_terreno_m2, λ=-0.164)
+  +0.121116 × cep_norm
+  -0.009593 × BoxCox(qtd_pavimentos, λ=0.731)
+  +0.002514 × t_ordinal
+  +0.030576 × flag_financiamento
+  +0.023038 × padrao_ordinal
+
+onde BoxCox(x, λ) = (x^λ − 1) / λ   e   log = logaritmo natural

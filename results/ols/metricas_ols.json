@@ -1,0 +1,196 @@
+{
+  "metodo": "OLS_BOXCOX_STEPWISE_AIC",
+  "features_selecionadas": [
+    "valor_m2_terreno_bc",
+    "fator_obsolescencia_bc",
+    "flag_subdeclaracao",
+    "valor_m2_construcao_bc",
+    "area_terreno_m2_bc",
+    "cep_norm",
+    "qtd_pavimentos_bc",
+    "t_ordinal",
+    "flag_financiamento",
+    "padrao_ordinal"
+  ],
+  "n_features": 10,
+  "r2_treino_ajustado": 0.6539772934872903,
+  "aic": 86.19083545831018,
+  "bic": 166.04127135591193,
+  "metricas": {
+    "treino": {
+      "r2": 0.6543068703103333,
+      "rmse": 0.2427114895674634,
+      "mae": 0.1790664833660765,
+      "mape": 18.184631181861793,
+      "n": 10500
+    },
+    "val": {
+      "r2": 0.6356438505634341,
+      "rmse": 0.253684771128045,
+      "mae": 0.17943470330636735,
+      "mape": 18.693453270273537,
+      "n": 2250
+    },
+    "teste": {
+      "r2": 0.6606643121059741,
+      "rmse": 0.23878280895919612,
+      "mae": 0.1799424438803438,
+      "mape": 18.007855138915097,
+      "n": 2250
+    }
+  },
+  "diagnosticos": {
+    "breusch_pagan": {
+      "LM": 520.6854817205158,
+      "p": 1.6720648245544923e-105,
+      "homoscedastico": false
+    },
+    "white": {
+      "LM": 1061.8430519227193,
+      "p": 2.4842083043185795e-181
+    },
+    "shapiro_wilk": {
+      "W": 0.9589242247854363,
+      "p": 2.0422484408777216e-35,
+      "normal": false
+    },
+    "jarque_bera": {
+      "JB": 5640.306724834711,
+      "p": 0.0,
+      "skew": 0.20992012671921317,
+      "kurt": 6.565930989006631
+    },
+    "durbin_watson": {
+      "DW": 1.9932343411948623
+    },
+    "residuos": {
+      "mean": -4.3972275556197496e-14,
+      "std": 0.2427114895674634,
+      "skew": 0.20992012671921317,
+      "kurt": 3.565930989006631
+    }
+  },
+  "nbr14653_grau2_teste": {
+    "r2_teste": 0.6606643121059741,
+    "mape_teste": 18.007855138915097,
+    "ok_r2": true,
+    "ok_mape": true,
+    "atende": true
+  },
+  "boxcox_lambdas": {
+    "area_construida_m2": {
+      "lambda": -0.20372020203048785,
+      "shift": 0.0,
+      "transform": "x^-0.204"
+    },
+    "area_terreno_m2": {
+      "lambda": -0.1643000379131282,
+      "shift": 0.0,
+      "transform": "x^-0.164"
+    },
+    "valor_m2_terreno": {
+      "lambda": -0.026613079168692995,
+      "shift": 0.0,
+      "transform": "log"
+    },
+    "valor_m2_construcao": {
+      "lambda": 0.8141016753808392,
+      "shift": 0.0,
+      "transform": "x^0.814"
+    },
+    "qtd_pavimentos": {
+      "lambda": 0.7307028935861737,
+      "shift": 0.0,
+      "transform": "x^0.731"
+    },
+    "fator_obsolescencia": {
+      "lambda": 1.8727367982314842,
+      "shift": 0.0,
+      "transform": "square"
+    },
+    "prop_financiamento": {
+      "lambda": -3.6315487514090483,
+      "shift": 1.0,
+      "transform": "x^-3.632"
+    }
+  },
+  "coeficientes": [
+    {
+      "Feature": "const",
+      "Coeficiente": 5.004375872472993,
+      "Std_Error": 0.06362951742891185,
+      "t_stat": 78.64865356025967,
+      "p_valor": 0.0
+    },
+    {
+      "Feature": "valor_m2_terreno_bc",
+      "Coeficiente": 0.2909314749520209,
+      "Std_Error": 0.0051927879787948775,
+      "t_stat": 56.02606463812126,
+      "p_valor": 0.0
+    },
+    {
+      "Feature": "fator_obsolescencia_bc",
+      "Coeficiente": 0.865362974014289,
+      "Std_Error": 0.019050604262499153,
+      "t_stat": 45.42443704621716,
+      "p_valor": 0.0
+    },
+    {
+      "Feature": "flag_subdeclaracao",
+      "Coeficiente": -0.2741000264862081,
+      "Std_Error": 0.005771030297553866,
+      "t_stat": -47.495856433536545,
+      "p_valor": 0.0
+    },
+    {
+      "Feature": "valor_m2_construcao_bc",
+      "Coeficiente": 0.0008341296887927263,
+      "Std_Error": 3.449479618399701e-05,
+      "t_stat": 24.181319534211354,
+      "p_valor": 9.302624572434742e-126
+    },
+    {
+      "Feature": "area_terreno_m2_bc",
+      "Coeficiente": 0.15257351044147605,
+      "Std_Error": 0.01009822743560222,
+      "t_stat": 15.108939802995943,
+      "p_valor": 4.8620746529491527e-51
+    },
+    {
+      "Feature": "cep_norm",
+      "Coeficiente": 0.12111581240804765,
+      "Std_Error": 0.011908602556040697,
+      "t_stat": 10.170447106458438,
+      "p_valor": 3.4783519236115424e-24
+    },
+    {
+      "Feature": "qtd_pavimentos_bc",
+      "Coeficiente": -0.009593035622819756,
+      "Std_Error": 0.0009713515373166995,
+      "t_stat": -9.87596689178044,
+      "p_valor": 6.660178288077718e-23
+    },
+    {
+      "Feature": "t_ordinal",
+      "Coeficiente": 0.0025143723643943935,
+      "Std_Error": 0.0003512614317864198,
+      "t_stat": 7.158122517485002,
+      "p_valor": 8.726385316120126e-13
+    },
+    {
+      "Feature": "flag_financiamento",
+      "Coeficiente": 0.030576163456264217,
+      "Std_Error": 0.00506862395137306,
+      "t_stat": 6.03243873477363,
+      "p_valor": 1.6695588762521118e-09
+    },
+    {
+      "Feature": "padrao_ordinal",
+      "Coeficiente": 0.023037640325182927,
+      "Std_Error": 0.004239315724982919,
+      "t_stat": 5.434282752147636,
+      "p_valor": 5.6248627703304975e-08
+    }
+  ]
+}

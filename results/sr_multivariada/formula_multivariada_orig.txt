@@ -1,0 +1,2 @@
+ln(valor_mercado / area_construida_m2) = 
+  ((cube(((fator_obsolescencia - 0.2000) / 0.7900) - ((flag_subdeclaracao - 0.0000) / 1.0000)) * 0.46172303) + 7.7070146) + (((valor_m2_terreno - 126.0000) / 25914.0000) + ((valor_m2_construcao - 1291.0000) / 2499.0000))

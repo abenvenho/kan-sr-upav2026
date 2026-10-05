@@ -1,0 +1,14 @@
+# Reproducao completa dos scripts 00-10 (treino da KAN, SR, OLS, MLP)
+# A regressao simbolica (PySR) instala o Julia automaticamente na primeira execucao.
+torch>=2.2
+pykan>=0.2.8
+pysr>=1.0
+scikit-learn>=1.4
+pandas>=2.0
+numpy>=1.26
+scipy>=1.11
+statsmodels>=0.14
+matplotlib>=3.8
+openpyxl>=3.1
+tables>=3.9
+vaex>=4.17 ; python_version < "3.12"

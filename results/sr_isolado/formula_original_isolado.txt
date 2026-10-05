@@ -1,0 +1,14 @@
+ln(valor_mercado / area_construida_m2) =
+  +8.45108
+  + [6.3827974e-5 / (((area_construida_m2 - 7.0000) / 1231.0000) - 0.03690371)]
+  + [(square((cube(cube(((padrao_ordinal - 1.0000) / 5.0000))) * 7.5362296) + -0.21666898) * (sqrt(((padrao_ordinal - 1.0000) / 5.0000)) + -1.0009061)) - -0.01935222]
+  + [log(square(log(((cep_norm - 0.0000) / 1.0000) / 0.47215664) / ((cep_norm - 0.0000) / 1.0000))) * -0.010513828]
+  + [(((t_ordinal - 23.0000) / 36.0000) * 0.067464404) + -0.04499509]
+  + [+0.031759 * flag_financiamento + -0.032289]
+  + [(prop_financiamento * -0.090349734) * log(prop_financiamento)]
+  + [-0.276116 * flag_subdeclaracao + +0.072319]
+  + [-4.353281e-5 / ((area_terreno_m2 - 89.0000) / 233314.0000)]
+  + [((valor_m2_terreno - 126.0000) / 25914.0000) * 0.6324517]
+  + [((-0.0040626614 / (((valor_m2_construcao - 1291.0000) / 2499.0000) + -0.6525656)) + ((cube(-0.00063987257 / cube(((valor_m2_construcao - 1291.0000) / 2499.0000))) + ((valor_m2_construcao - 1291.0000) / 2499.0000)) * 1.3472091)) + -0.62574536]
+  + [((square(sqrt(((qtd_pavimentos - 1.0000) / 41.0000)) - ((qtd_pavimentos - 1.0000) / 41.0000)) * -9.633762) + 0.47012228) / exp(((qtd_pavimentos - 1.0000) / 41.0000))]
+  + [(((fator_obsolescencia - 0.2000) / 0.7900) - 0.83584404) * square(((fator_obsolescencia - 0.2000) / 0.7900))]

@@ -1,0 +1,59 @@
+{
+  "metodo": "SR_MULTIVARIADO_DESTILADO_KAN",
+  "descricao": "PySR multivariado treinado sobre predicoes KAN (preserva interacoes)",
+  "expressao_normalizada": "((cube(fator_obsolescencia - flag_subdeclaracao) * 0.46172303) + 7.7070146) + (valor_m2_terreno + valor_m2_construcao)",
+  "complexidade": 12,
+  "metricas_vs_ytrue": {
+    "treino": {
+      "r2": 0.6239407740905363,
+      "rmse": 0.25314717174110113,
+      "mae": 0.18886850712117026,
+      "mape": 19.25047449541998,
+      "n": 10500
+    },
+    "val": {
+      "r2": 0.5900102788082091,
+      "rmse": 0.26910255393025345,
+      "mae": 0.19446719878755683,
+      "mape": 20.41696254520278,
+      "n": 2250
+    },
+    "teste": {
+      "r2": 0.6250533746121449,
+      "rmse": 0.25099958396554944,
+      "mae": 0.19185745841487908,
+      "mape": 19.2684830070395,
+      "n": 2250
+    }
+  },
+  "metricas_fidelidade_kan": {
+    "treino": {
+      "r2": 0.8693638664817955,
+      "rmse": 0.1262158335633023,
+      "mae": 0.1004289416672052,
+      "mape": 10.024570624014158,
+      "n": 10500
+    },
+    "val": {
+      "r2": 0.8564739227650523,
+      "rmse": 0.131101249438861,
+      "mae": 0.10488287322076986,
+      "mape": 10.471537765373018,
+      "n": 2250
+    },
+    "teste": {
+      "r2": 0.8644177104704879,
+      "rmse": 0.12753445968643773,
+      "mae": 0.1022491716501455,
+      "mape": 10.205741213978364,
+      "n": 2250
+    }
+  },
+  "nbr14653_grau2_teste": {
+    "r2_teste": 0.6250533746121449,
+    "mape_teste": 19.2684830070395,
+    "ok_r2": false,
+    "ok_mape": true,
+    "atende": false
+  }
+}

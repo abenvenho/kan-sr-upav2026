@@ -1,0 +1,15 @@
+ln(valor/m2) = ((cube(fator_obsolescencia - flag_subdeclaracao) * 0.46172303) + 7.7070146) + (valor_m2_terreno + valor_m2_construcao)
+
+onde as variaveis sao normalizadas MinMax [0,1]:
+  area_construida_m2 -> x_0 = (area_construida_m2 - 7.0000) / 1231.0000
+  padrao_ordinal -> x_1 = (padrao_ordinal - 1.0000) / 5.0000
+  cep_norm -> x_2 = (cep_norm - 0.0000) / 1.0000
+  t_ordinal -> x_3 = (t_ordinal - 23.0000) / 36.0000
+  flag_financiamento -> x_4 = (flag_financiamento - 0.0000) / 1.0000
+  prop_financiamento -> x_5 = (prop_financiamento - 0.0000) / 1.0000
+  flag_subdeclaracao -> x_6 = (flag_subdeclaracao - 0.0000) / 1.0000
+  area_terreno_m2 -> x_7 = (area_terreno_m2 - 89.0000) / 233314.0000
+  valor_m2_terreno -> x_8 = (valor_m2_terreno - 126.0000) / 25914.0000
+  valor_m2_construcao -> x_9 = (valor_m2_construcao - 1291.0000) / 2499.0000
+  qtd_pavimentos -> x_10 = (qtd_pavimentos - 1.0000) / 41.0000
+  fator_obsolescencia -> x_11 = (fator_obsolescencia - 0.2000) / 0.7900

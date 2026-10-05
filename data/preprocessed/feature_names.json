@@ -1,0 +1,14 @@
+[
+  "area_construida_m2",
+  "padrao_ordinal",
+  "cep_norm",
+  "t_ordinal",
+  "flag_financiamento",
+  "prop_financiamento",
+  "flag_subdeclaracao",
+  "area_terreno_m2",
+  "valor_m2_terreno",
+  "valor_m2_construcao",
+  "qtd_pavimentos",
+  "fator_obsolescencia"
+]

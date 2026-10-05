@@ -1,0 +1,20 @@
+KAN + Regressão Simbólica — UPAV 2026
+Copyright 2026 Agnaldo Calvi Benvenho
+
+Licenciamento deste repositório / Licensing of this repository:
+
+  * Código-fonte (code/, app/, tools/)                → Apache License 2.0 (arquivo LICENSE)
+  * Dados, modelos treinados, resultados e figuras    → Creative Commons Attribution 4.0
+    (data/, models/, results/, figures/)                 International (arquivo LICENSE-CC-BY-4.0)
+  * Artigo e apresentação (paper/, presentation/)     → CC BY 4.0 (arquivo LICENSE-CC-BY-4.0)
+
+Os dados primários — guias de ITBI pagas (Secretaria Municipal da Fazenda de São Paulo)
+e cadastro do IPTU do Município de São Paulo (compilação CEM-USP) — são registros públicos.
+A base deste repositório é um extrato derivado, filtrado e enriquecido desses registros,
+do qual foram removidos os identificadores diretos dos imóveis (número do contribuinte/SQL
+e logradouro).
+
+The primary data — paid ITBI transfer-tax returns (São Paulo Municipal Finance Department)
+and the São Paulo IPTU property-tax cadastre (CEM-USP compilation) — are public records.
+The dataset in this repository is a derived, filtered and enriched extract from which
+direct property identifiers (taxpayer/SQL number and street address) were removed.

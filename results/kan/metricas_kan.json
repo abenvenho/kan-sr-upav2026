@@ -1,0 +1,25 @@
+{
+  "treino": {
+    "rmse": 0.214968,
+    "mae": 0.15666,
+    "r2": 0.728819
+  },
+  "validacao": {
+    "rmse": 0.22956,
+    "mae": 0.161534,
+    "r2": 0.701648
+  },
+  "teste": {
+    "rmse": 0.218571,
+    "mae": 0.164739,
+    "r2": 0.71568
+  },
+  "nbr14653_grau2": {
+    "r2_validacao": 0.701648,
+    "rmse_log_validacao": 0.22956,
+    "erro_pct_mercado": 25.8,
+    "ok_r2": true,
+    "ok_erro_padrao": true,
+    "atende_grau2": true
+  }
+}

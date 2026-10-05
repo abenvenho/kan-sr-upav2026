@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "Se usar estes dados, códigos ou resultados, cite o artigo abaixo. / If you use this material, please cite the paper below."
+type: software
+title: "KAN + Regressão Simbólica na avaliação de imóveis — dados, código e aplicativo (UPAV 2026)"
+abstract: >-
+  Base de 15.000 transações de apartamentos residenciais no município de São Paulo
+  (2021–2025), derivada do cruzamento das guias de ITBI pagas com o cadastro do IPTU,
+  com o código completo, os modelos treinados, os resultados e um aplicativo Streamlit
+  do estudo de modelagem híbrida com redes Kolmogorov–Arnold (KAN) e regressão simbólica (SR).
+authors:
+  - family-names: Benvenho
+    given-names: Agnaldo Calvi
+    affiliation: "BP Avaliações e Perícias"
+repository-code: "https://github.com/abenvenho/kan-sr-upav2026"
+url: "https://www.kaggle.com/datasets/agnaldocalvibenvenho/kan-e-regresso-simblica"
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+date-released: "2026-10-04"
+version: "1.0.0"
+keywords:
+  - engenharia de avaliações
+  - real-estate appraisal
+  - Kolmogorov-Arnold Networks
+  - symbolic regression
+  - regressão simbólica
+  - ABNT NBR 14653-2
+  - São Paulo
+  - ITBI
+preferred-citation:
+  type: conference-paper
+  title: >-
+    Modelagem híbrida para avaliação de imóveis com redes neurais Kolmogorov–Arnold
+    e regressão simbólica
+  authors:
+    - family-names: Benvenho
+      given-names: Agnaldo Calvi
+  collection-title: "XL Congreso Panamericano de Valuación — UPAV 2026"
+  conference:
+    name: "Unión Panamericana de Asociaciones de Valuación (UPAV) 2026"
+    city: "Madrid"
+    country: ES
+  year: 2026

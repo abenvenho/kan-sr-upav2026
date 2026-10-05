@@ -1,0 +1,36 @@
+coluna,papel,tipo,n_nao_nulos,n_distintos,minimo,maximo,media,descricao
+ln_valor_m2,alvo,float64,15000,10320,6.6299,10.3697,8.4529,Variavel dependente: logaritmo natural do valor de transacao por metro quadrado de area construida
+valor_m2,auxiliar,float64,15000,10320,757.4123,31879.1946,5128.1317,Valor de transacao por metro quadrado de area construida (R$/m2)
+ln_valor_mercado,auxiliar,float64,15000,5606,10.0234,16.86,13.1949,Logaritmo natural do valor total da transacao (R$)
+data_transacao,auxiliar,object,15000,591,,,,Data da transacao registrada na guia de ITBI (AAAA-MM-DD)
+ano,auxiliar,int64,15000,5,2021.0,2025.0,2024.5298,Ano da transacao
+mes,auxiliar,int64,15000,12,1.0,12.0,6.6405,Mes da transacao (1-12)
+trimestre,auxiliar,int64,15000,4,1.0,4.0,2.5283,Trimestre da transacao (1-4)
+t_ordinal,feature,int64,15000,35,1.0,59.0,47.9981,"Indice temporal ordinal em meses, contado a partir do inicio da serie; capta a valorizacao no tempo"
+cep,auxiliar,int64,15000,4790,1004010.0,8490800.0,3856416.6639,"CEP do imovel (8 digitos, sem mascara)"
+cep_num,auxiliar,int64,15000,4790,1004010.0,8490800.0,3856416.6639,CEP em formato numerico inteiro
+cep_norm,feature,float64,15000,4790,0.0,1.0,0.381,"CEP normalizado para o intervalo [0,1]; proxy de localizacao adotada no lugar da geocodificacao lat/lon"
+bairro,auxiliar,object,10406,2879,,,,Bairro/denominacao do logradouro conforme cadastro do IPTU
+area_construida_m2,feature,int64,15000,605,7.0,1736.0,136.0544,Area construida da unidade autonoma (m2)
+area_terreno_m2,feature,int64,15000,4036,78.0,233403.0,7321.9318,Area do terreno do condominio (m2)
+padrao_ordinal,feature,int64,15000,6,1.0,6.0,3.1541,"Padrao construtivo em escala ordinal 1 a 6, equivalente as letras A a F do cadastro do IPTU"
+padrao_letra,auxiliar,object,15000,6,,,,"Padrao construtivo em letra (A a F), conforme tabela de padroes do IPTU-SP"
+padrao_tipo,auxiliar,object,15000,1,,,,Tipologia do uso conforme cadastro do IPTU (ex.: Residencial Vertical)
+cod_padrao_iptu,auxiliar,int64,15000,13,11.0,45.0,22.5218,Codigo numerico de padrao/uso do cadastro do IPTU-SP
+flag_financiamento,feature,int64,15000,2,0.0,1.0,0.3793,"Indicador binario de transacao com financiamento (1 = sim, 0 = nao)"
+prop_financiamento,feature,float64,15000,3677,0.0,1.0,0.2365,Proporcao financiada do valor da transacao (0 a 1)
+valor_financiado_num,auxiliar,float64,15000,2415,0.0,13982500.0,138396.0065,Valor financiado declarado na guia de ITBI (R$)
+flag_subdeclaracao,feature,int64,15000,2,0.0,1.0,0.2421,Indicador binario de subdeclaracao: valor declarado inferior ao valor venal de referencia (1 = sim)
+valor_declarado,auxiliar,float64,15000,3301,0.01,21000000.0,723661.9812,Valor de transacao declarado pelo contribuinte (R$)
+valor_venal_ref,auxiliar,float64,15000,12225,0.0,10927473.0,539448.5653,Valor venal de referencia arbitrado pela Prefeitura para fins de ITBI (R$)
+natureza_transacao,auxiliar,object,15000,2,,,,Natureza juridica da transacao (ex.: 1.COMPRA E VENDA)
+proporcao_transmitida,auxiliar,float64,15000,78,50.0,100.0,98.7522,Percentual do imovel transmitido na operacao (%)
+cartorio,auxiliar,object,15000,18,,,,Cartorio de registro de imoveis competente
+cod_uso_iptu,auxiliar,int64,15000,3,20.0,85.0,21.4781,Codigo de uso do imovel no cadastro do IPTU-SP
+descricao_uso,auxiliar,object,15000,3,,,,Descricao do codigo de uso do IPTU-SP
+flag_flat,auxiliar,int64,15000,2,0.0,1.0,0.0227,Indicador binario de unidade em flat/apart-hotel (1 = sim)
+fator_obsolescencia,feature,float64,15000,66,0.2,0.99,0.718,"Fator de depreciacao por idade/estado do edificio, derivado do cadastro do IPTU (0 a 1)"
+qtd_pavimentos,feature,float64,15000,41,1.0,42.0,15.9489,Quantidade de pavimentos do edificio
+valor_m2_construcao,feature,float64,15000,25,1291.0,3790.0,2464.1433,Valor unitario de construcao da Planta Generica de Valores (R$/m2)
+valor_m2_terreno,feature,float64,15000,4168,126.0,26040.0,3671.4909,Valor unitario de terreno da Planta Generica de Valores (R$/m2)
+split,particao,object,15000,3,,,,"Particao usada no estudo: train (70%), val (15%) ou test (15%), estratificada por padrao_ordinal"

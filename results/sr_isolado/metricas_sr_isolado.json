@@ -1,0 +1,141 @@
+{
+  "intercepto": 8.451075448070718,
+  "metodo": "SR_ISOLADO_ADITIVO_1D",
+  "descricao": "PySR treinado diretamente nos dados via backfitting sequencial",
+  "formulas": {
+    "valor_m2_construcao": {
+      "expression": "((-0.0040626614 / (x + -0.6525656)) + ((cube(-0.00063987257 / cube(x)) + x) * 1.3472091)) + -0.62574536",
+      "complexity": 17,
+      "rmse": 0.05549504448561684,
+      "r2": 0.9751800247055352
+    },
+    "valor_m2_terreno": {
+      "expression": "x * 0.6324517",
+      "complexity": 3,
+      "rmse": 0.05843930673665947,
+      "r2": 0.7131737086388454
+    },
+    "padrao_ordinal": {
+      "expression": "(square((cube(cube(x)) * 7.5362296) + -0.21666898) * (sqrt(x) + -1.0009061)) - -0.01935222",
+      "complexity": 15,
+      "rmse": 0.006513677761455446,
+      "r2": 0.9109891260451899
+    },
+    "qtd_pavimentos": {
+      "expression": "((square(sqrt(x) - x) * -9.633762) + 0.47012228) / exp(x)",
+      "complexity": 12,
+      "rmse": 0.033955264600680005,
+      "r2": 0.8989752178191368
+    },
+    "flag_subdeclaracao": {
+      "expression": "-0.276116 * x + +0.072319",
+      "complexity": 4,
+      "rmse": 0.27824345228233116,
+      "r2": 0.15254997153882066,
+      "delta_x0": 0.0723193221151492,
+      "delta_x1": -0.20379636972360948
+    },
+    "area_construida_m2": {
+      "expression": "6.3827974e-5 / (x - 0.03690371)",
+      "complexity": 5,
+      "rmse": 0.04126199038267925,
+      "r2": 0.11854288824901649
+    },
+    "cep_norm": {
+      "expression": "log(square(log(x / 0.47215664) / x)) * -0.010513828",
+      "complexity": 10,
+      "rmse": 0.07246663486012761,
+      "r2": 0.35950020889391876
+    },
+    "fator_obsolescencia": {
+      "expression": "(x - 0.83584404) * square(x)",
+      "complexity": 6,
+      "rmse": 0.05833963308747175,
+      "r2": 0.6302547674948892
+    },
+    "area_terreno_m2": {
+      "expression": "-4.353281e-5 / x",
+      "complexity": 3,
+      "rmse": 0.03928392807991062,
+      "r2": 0.09026384216455641
+    },
+    "prop_financiamento": {
+      "expression": "(x * -0.090349734) * log(x)",
+      "complexity": 6,
+      "rmse": 0.024343934359949443,
+      "r2": 0.15250624646164523
+    },
+    "flag_financiamento": {
+      "expression": "+0.031759 * x + -0.032289",
+      "complexity": 4,
+      "rmse": 0.25630228967131585,
+      "r2": 0.003592514475552422,
+      "delta_x0": -0.032288773502356045,
+      "delta_x1": -0.0005293382742623593
+    },
+    "t_ordinal": {
+      "expression": "(x * 0.067464404) + -0.04499509",
+      "complexity": 5,
+      "rmse": 0.01753594446674475,
+      "r2": 0.37248053849905427
+    }
+  },
+  "metricas": {
+    "train": {
+      "r2": 0.6158226544202117,
+      "rmse": 0.255864967931591,
+      "mae": 0.1917458607127764,
+      "mape": 19.84568299509323,
+      "n": 10500
+    },
+    "val": {
+      "r2": 0.5927145367557691,
+      "rmse": 0.2682135996864149,
+      "mae": 0.1964571649576801,
+      "mape": 20.77611918926628,
+      "n": 2250
+    },
+    "test": {
+      "r2": 0.6077039243708824,
+      "rmse": 0.25674100978927344,
+      "mae": 0.1934469258439501,
+      "mape": 19.75795624879508,
+      "n": 2250
+    }
+  },
+  "correlacoes_pearson": {
+    "area_construida_m2": 0.2411,
+    "padrao_ordinal": 0.4112,
+    "cep_norm": -0.1747,
+    "t_ordinal": 0.0333,
+    "flag_financiamento": -0.0583,
+    "prop_financiamento": -0.0743,
+    "flag_subdeclaracao": -0.3144,
+    "area_terreno_m2": -0.0873,
+    "valor_m2_terreno": 0.6076,
+    "valor_m2_construcao": 0.6118,
+    "qtd_pavimentos": 0.3733,
+    "fator_obsolescencia": 0.0948
+  },
+  "feature_order": [
+    "valor_m2_construcao",
+    "valor_m2_terreno",
+    "padrao_ordinal",
+    "qtd_pavimentos",
+    "flag_subdeclaracao",
+    "area_construida_m2",
+    "cep_norm",
+    "fator_obsolescencia",
+    "area_terreno_m2",
+    "prop_financiamento",
+    "flag_financiamento",
+    "t_ordinal"
+  ],
+  "nbr14653_grau2_teste": {
+    "r2_teste": 0.6077039243708824,
+    "mape_teste": 19.75795624879508,
+    "ok_r2": false,
+    "ok_erro": true,
+    "atende_grau2": false
+  }
+}
